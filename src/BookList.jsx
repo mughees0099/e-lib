@@ -14,7 +14,7 @@ const BookList = () => {
       : books.filter((book) => book.category === selectedCategory);
 
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800">
+    <div className="min-h-screen container mx-auto bg-gray-50 text-gray-800">
       {/* Hero Section */}
       <div
         className="h-[400px]  bg-center flex items-center justify-center"
@@ -51,7 +51,7 @@ const BookList = () => {
       </div>
 
       {/* Book Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-8">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5  gap-8 px-8">
         {filteredBooks.map((book) => (
           <div
             key={book.id}
